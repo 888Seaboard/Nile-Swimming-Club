@@ -1,7 +1,7 @@
 "use client";
 
 import { useAuth } from '@/contexts/AuthContext';
-import { PricingSection } from '@/components/PricingSection';
+//import { PricingSection } from '@/components/PricingSection';
 import { useTrialStatus } from '@/hooks/useTrialStatus';
 import { TypewriterEffect } from '@/components/TypewriterEffect';
 import { FaWhatsapp } from 'react-icons/fa';
