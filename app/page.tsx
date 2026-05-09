@@ -230,21 +230,22 @@ const handleSubmit = async (e: React.FormEvent) => {
             <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
               {/* 左邊哲學字卡，填滿高度 */}
               <div className="relative h-full flex">
-                <pre className="relative rounded-xl bg-slate-900 p-8 shadow-2xl border border-amber-500/40 w-full flex">
-                  <code className="text-sm sm:text-base text-slate-100 m-auto">
-                    <TypewriterEffect
-                      text={`川河泳會 Nile Swimming Club
+    <pre className="relative rounded-xl bg-slate-900 p-8 shadow-2xl border border-amber-500/40 w-full flex items-center justify-center">
+      <code className="text-sm sm:text-base text-slate-100">
+        <TypewriterEffect
+          text={`川河泳會 Nile Swimming Club
 授課哲學 Training Philosophy 
+
 
   安全第一，循序漸進
   重視技術，培養水感
   趣味練習，建立自信
   因應程度，分組教學
 `}
-                    />
-                  </code>
-                </pre>
-              </div>
+        />
+      </code>
+    </pre>
+  </div>
 
               {/* 右邊三大課程 summary（卡片同樣拉滿高度） */}
               <div className="grid grid-cols-1 gap-4">
