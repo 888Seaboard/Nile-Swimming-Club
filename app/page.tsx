@@ -196,12 +196,21 @@ const handleSubmit = async (e: React.FormEvent) => {
           <div className="relative pt-20 pb-16 sm:pb-24">
             <div className="text-center">
               <h1 className="text-5xl sm:text-6xl lg:text-8xl font-bold text-white">
-                <span className="block tracking-[0.25em] uppercase text-sm sm:text-base 1g:text-1g text-slate-300">
-                  Nile Swimming Club
-                </span>
-                <span className="block mt-2 text-5xl sm:text-6xl lg:text-8xl text-white">
+                
+                <span className="block mt-2 text-5xl sm:text-6xl lg:text-7xl text-white">
                   川河泳會
                 </span>
+
+
+                <span className="block tracking-[0.25em] uppercase text-3xl sm:text-4xl 1g:text-5xl" style={{
+    color: '#373d46', // slate-300
+    WebkitTextStroke: '2px #fbbf24',
+  }}>
+                  Nile Swimming Club
+                </span>
+
+                <br />
+                
                 <span className="block mt-4 text-lg sm:text-2xl text-amber-400">
                   成人及兒童游泳班｜泳隊訓練｜技術改良
                 </span>
