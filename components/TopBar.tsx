@@ -4,9 +4,10 @@ import { useEffect, useState, useRef } from 'react';
 import { useAuth } from '@/contexts/AuthContext';
 import { useRouter, usePathname } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useSubscription } from '@/hooks/useSubscription';
 import { useTrialStatus } from '@/hooks/useTrialStatus';
-import { FaInstagram } from 'react-icons/fa'; // 新增 Instagram icon
+import { FaInstagram } from 'react-icons/fa';
 
 // TopBar component handles user profile display and navigation
 export default function TopBar() {
@@ -55,13 +56,19 @@ export default function TopBar() {
   return (
     <div className="w-full bg-white/90 dark:bg-black/80 border-b border-gray-200/70 dark:border-gray-800/70 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-3">
-        {/* 左邊 Logo：黑白 + 少少金色感覺 */}
+        {/* 左邊 Logo：改用 JPG 圖片 */}
         <Link
           href="/"
           className="flex items-center gap-3 hover:opacity-80 transition-opacity"
         >
-          <div className="flex h-9 w-9 items-center justify-center rounded-full border border-amber-500/60 bg-black text-white text-sm font-semibold tracking-[0.1em]">
-            NS
+          <div className="relative h-9 w-9 rounded-full overflow-hidden border border-amber-500/60 bg-black">
+            <Image
+              src="/NilesSwimmingLogo.jpg"
+              alt="Nile Swimming Club logo"
+              fill
+              sizes="36px"
+              className="object-cover"
+            />
           </div>
           <div className="flex flex-col leading-tight">
             <span className="text-xs uppercase tracking-[0.25em] text-slate-500 dark:text-slate-300">
@@ -75,7 +82,7 @@ export default function TopBar() {
 
         {/* 右邊操作區 */}
         <div className="flex items-center gap-3">
-          {/* Instagram 按鈕（取代 BuyMeCoffee） */}
+          {/* Instagram 按鈕 */}
           <a
             href={instagramUrl}
             target="_blank"

@@ -195,19 +195,19 @@ const handleSubmit = async (e: React.FormEvent) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative pt-20 pb-16 sm:pb-24">
             <div className="text-center">
-              <h1 className="text-4xl sm:text-5xl lg:text-8xl font-bold text-white">
-                <span className="block tracking-[0.25em] uppercase text-sm sm:text-base lg:text-lg text-slate-300">
+              <h1 className="text-5xl sm:text-6xl lg:text-8xl font-bold text-white">
+                <span className="block tracking-[0.25em] uppercase text-sm sm:text-base 1g:text-1g text-slate-300">
                   Nile Swimming Club
                 </span>
-                <span className="block mt-2 text-4xl sm:text-5xl lg:text-6xl text-white">
+                <span className="block mt-2 text-5xl sm:text-6xl lg:text-8xl text-white">
                   川河泳會
                 </span>
-                <span className="block mt-4 text-lg sm:text-xl text-amber-400">
+                <span className="block mt-4 text-lg sm:text-2xl text-amber-400">
                   成人及兒童游泳班｜泳隊訓練｜技術改良
                 </span>
               </h1>
 
-              <p className="mt-6 max-w-3xl mx-auto text-base sm:text-lg text-slate-100">
+              <p className="mt-6 max-w-6xl mx-auto text-base sm:text-lg text-slate-100">
                 由經驗教練 Tsang Sir 帶領，專注元朗及西北區游泳訓練，
                 提供技術改良班、泳隊訓練、兒童及成人興趣班，以及一對一私人課程。
               </p>
@@ -337,7 +337,7 @@ const handleSubmit = async (e: React.FormEvent) => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white">時間及地點</h2>
             <p className="mt-4 text-lg text-slate-200">
-              以下為常見班別時間，只供參考；實際安排以教練最新公佈為準，
+              以下為常見班別時間，只供參考。<br /> 實際安排以教練最新公佈為準，
               可在報名表內註明你的可上課時間，我們會因應情況作出最佳安排。
             </p>
             <div className="mt-2 text-sm text-amber-400">
